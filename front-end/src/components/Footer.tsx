@@ -111,7 +111,7 @@ export default function Footer() {
             </h4>
             <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
               <a
-                href="https://www.facebook.com/fondationronaldmcdonald/"
+                href="https://www.facebook.com/maisonronaldmcdonaldtoulouse/"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -127,7 +127,7 @@ export default function Footer() {
                 Facebook
               </a>
               <a
-                href="https://www.instagram.com/maison_ronald_mcdonald_tlse/"
+                href="https://www.instagram.com/maisonronaldmcdonald_toulouse/"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -143,7 +143,7 @@ export default function Footer() {
                 Instagram
               </a>
               <a
-                href="https://www.linkedin.com/company/maison-ronald-mcdonald-toulouse/"
+                href="https://www.linkedin.com/company/maisonronaldmcdonaldtoulouse"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{

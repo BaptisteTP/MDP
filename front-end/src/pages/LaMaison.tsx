@@ -1,7 +1,7 @@
 import { SubpageHeader } from '../components/SubpageHeader'
 import { HeartDivider } from '../components/Signature'
-import DEVANTURE_MAISON from '../assets/Toulouse_archi-5_HD.jpg'
-import SALON_MAISON from '../assets/Toulouse_archi-14_HD.jpg'
+import AMBIANCE_TOULOUSE from '../assets/Toulouse_ambiance-34_HD.jpg'
+import CARTE_FRANCE from '../assets/Locations-France_icon-RGB-fr.png'
 
 const pastillesStats = [
   { num: '2 min', lbl: 'à pied séparent la Maison de l’hôpital' },
@@ -98,12 +98,17 @@ export default function LaMaison() {
             borderRadius: '16px',
             overflow: 'hidden',
             boxShadow: '0 6px 20px rgba(58,48,42,.1)',
+            background: 'var(--white)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: '24px',
           }}
         >
           <img
-            src={SALON_MAISON}
-            alt="Intérieur de la Maison Ronald McDonald"
-            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            src={CARTE_FRANCE}
+            alt="Implantation des Maisons Ronald McDonald en France"
+            style={{ width: '100%', height: '100%', objectFit: 'contain' }}
           />
         </div>
       </section>
@@ -128,9 +133,9 @@ export default function LaMaison() {
           }}
         >
           <img
-            src={DEVANTURE_MAISON}
+            src={AMBIANCE_TOULOUSE}
             alt="La Maison Ronald McDonald de Toulouse"
-            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%' }}
           />
         </div>
 
