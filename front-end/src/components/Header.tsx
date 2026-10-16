@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import LOGO_TOULOUSE from '../assets/logo-maison-toulouse.png'
-import LOGO_ASSO from '../assets/dessinemoi.webp'
 
 const navLinks = [
   { href: '/', label: 'Accueil' },
@@ -38,13 +37,12 @@ export default function Header() {
           gap: '20px',
         }}
       >
-        {/* LOGOS : Maison Toulouse + Association Dessine-moi une Maison */}
+        {/* LOGO : Maison Ronald McDonald Toulouse */}
         <Link
           to="/"
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: '12px',
             textDecoration: 'none',
           }}
         >
@@ -55,24 +53,6 @@ export default function Header() {
               height: '52px',
               width: 'auto',
               maxHeight: '52px',
-              objectFit: 'contain',
-            }}
-          />
-          <span
-            style={{
-              width: '1px',
-              height: '34px',
-              background: '#D9CFC4',
-              display: 'inline-block',
-            }}
-          />
-          <img
-            src={LOGO_ASSO}
-            alt="Association Dessine-moi une Maison"
-            style={{
-              height: '46px',
-              width: 'auto',
-              maxHeight: '46px',
               objectFit: 'contain',
             }}
           />

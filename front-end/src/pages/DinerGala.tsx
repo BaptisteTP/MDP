@@ -219,16 +219,7 @@ export default function DinerGala() {
             >
               Salle d'accueil actuelle
             </div>
-            <p
-              style={{
-                fontFamily: 'EB Garamond, serif',
-                fontSize: '16px',
-                margin: 0,
-                color: '#F9F5EC',
-              }}
-            >
-              Emplacement dédié à la vidéo de présentation du futur projet d’accueil (en cours de réalisation).
-            </p>
+
           </div>
         </div>
       </section>

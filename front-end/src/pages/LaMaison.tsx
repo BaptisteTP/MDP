@@ -175,8 +175,8 @@ export default function LaMaison() {
             }}
           >
             La Maison Ronald McDonald de Toulouse, gérée par l'association Dessine-moi une Maison,
-            a ouvert ses portes en 2005. En 20 ans, elle a accueilli plus de 18 000 familles et les
-            a accompagnées durant toute la durée de l'hospitalisation de leurs enfants. Accompagnées
+            a ouvert ses portes en 2005. En 20 ans, elle a accueilli plus 18 000 familles et les
+            a accompagnées durant toute la durée de l'hospitalisation de leurs enfants. Accompagnés
             par une équipe de 9 salariés engagés, les familles y trouvent une parenthèse de
             réconfort pour traverser l'épreuve de l'hospitalisation.
           </p>
@@ -221,7 +221,7 @@ export default function LaMaison() {
             margin: '0 auto',
           }}
         >
-          « Prendre soin des familles et maintenir le lien familial durant l'hospitalisation de leur enfant. »
+          Prendre soin des familles et maintenir le lien familial durant l'hospitalisation de leur enfant.
         </p>
       </section>
 

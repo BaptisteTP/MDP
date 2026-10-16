@@ -177,7 +177,7 @@ export default function Footer() {
           }}
         >
           <span>Association Dessine-moi une Maison — Maison Ronald McDonald de Toulouse</span>
-          <span>Mentions légales — Conception &amp; Réalisation : Baptiste</span>
+          <span>Mentions légales — Conception &amp; Réalisation : Baptiste TRONEL-PEYROZ</span>
         </div>
       </div>
     </footer>

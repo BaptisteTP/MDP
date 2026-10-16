@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import { Countdown } from '../components/Countdown'
 import { HeartDivider } from '../components/Signature'
 import LOGO_TOULOUSE from '../assets/logo-maison-toulouse.png'
-import LOGO_ASSO from '../assets/dessinemoi.webp'
 import DEVANTURE_MAISON from '../assets/Toulouse_archi-5_HD.jpg'
 
 const chiffresClesCourts = [
@@ -12,11 +11,11 @@ const chiffresClesCourts = [
   },
   {
     num: '2 min',
-    lbl: 'à pied de l’hôpital des enfants du CHU Purpan',
+    lbl: 'à pied de l’hôpital des enfants du CHU de Toulouse Purpan',
   },
   {
-    num: '392',
-    lbl: 'nuits : le séjour le plus long',
+    num: '392 nuits',
+    lbl: 'le séjour le plus long',
   },
 ]
 
@@ -39,9 +38,7 @@ export default function Home() {
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
-              gap: '18px',
               marginBottom: '20px',
-              flexWrap: 'wrap',
             }}
           >
             <div
@@ -57,21 +54,6 @@ export default function Home() {
                 src={LOGO_TOULOUSE}
                 alt="Maison Ronald McDonald Toulouse"
                 style={{ height: '50px', width: 'auto', objectFit: 'contain' }}
-              />
-            </div>
-            <div
-              style={{
-                background: 'var(--white)',
-                padding: '8px 16px',
-                borderRadius: '12px',
-                border: '1px solid #E4D9C8',
-                boxShadow: '0 2px 6px rgba(58,48,42,.06)',
-              }}
-            >
-              <img
-                src={LOGO_ASSO}
-                alt="Association Dessine-moi une Maison"
-                style={{ height: '46px', width: 'auto', objectFit: 'contain' }}
               />
             </div>
           </div>
@@ -333,7 +315,7 @@ export default function Home() {
               margin: 0,
             }}
           >
-            Située à 2 minutes à pied de l’hôpital des enfants du CHU Purpan, la Maison Ronald
+            Située à 2 minutes à pied de l’hôpital des enfants du CHU de Toulouse Purpan, la Maison Ronald
             McDonald de Toulouse accueille chaque jour les familles dans un cadre chaleureux et
             bienveillant, préservant le lien familial durant l’épreuve de l’hospitalisation.
           </p>

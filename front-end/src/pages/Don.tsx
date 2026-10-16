@@ -110,7 +110,7 @@ export default function Don() {
             }}
           >
             Réduction d'impôt équivalente à <strong>60%</strong> du montant du don, dans la limite
-            de 5‰ du chiffre d'affaires hors taxes.
+            de 5‰ du chiffre d'affaires.
           </p>
           <div
             style={{
@@ -185,7 +185,7 @@ export default function Don() {
             }}
           >
             Exemple : pour un don de <strong>100€</strong>, <strong>66€</strong> sont déduits de
-            l'impôt, soit un coût réel de <strong>34€</strong> pour le particulier.
+            l'impôt, soit un coût réel de <strong>34€</strong>.
           </div>
         </div>
       </section>
