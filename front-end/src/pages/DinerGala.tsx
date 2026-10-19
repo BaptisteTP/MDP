@@ -1,11 +1,11 @@
-import { SubpageHeader } from '../components/SubpageHeader'
+﻿import { SubpageHeader } from '../components/SubpageHeader'
 import { HeartDivider } from '../components/Signature'
 import SALLE_ACCUEIL from '../assets/Toulouse_archi-14_HD.jpg'
 
 const programme = [
-  { time: 'À partir de 18h30', text: 'Accueil apéritif' },
-  { time: '19h00 – 20h00', text: 'Collecte de dons' },
-  { time: '20h30 – 22h30', text: 'Cocktail dînatoire, animations & vente aux enchères' },
+  { time: '18h30', text: 'Cocktail d’accueil' },
+  { time: '19h15 - 20h15', text: 'Collecte de fonds pour soutenir les actions de la Maison Ronald McDonald de Toulouse' },
+  { time: '20h30 - 23h00', text: 'Cocktail dînatoire signé Pierre Lambinon - 2 étoiles Michelin, animations exclusives et vente aux enchères' },
 ]
 
 export default function DinerGala() {
@@ -160,7 +160,11 @@ export default function DinerGala() {
               lineHeight: 1.25,
             }}
           >
-            Le projet 2026 financé grâce à votre générosité — un espace dédié à l’accueil des familles
+            Le projet 2026 financé grâce à votre générosité
+            <br />
+            <span style={{ color: 'var(--rose-deep)' }}>
+              Un espace dédié à l’accueil des familles
+            </span>
           </h2>
           <p
             style={{
@@ -224,7 +228,7 @@ export default function DinerGala() {
         </div>
       </section>
 
-      {/* COMMENT SE DÉROULE LA COLLECTE DE DONS ? */}
+      {/* COLLECTE DE DONS */}
       <section
         style={{
           background: 'var(--white)',
@@ -235,7 +239,7 @@ export default function DinerGala() {
         }}
       >
         <div className="eyebrow" style={{ color: 'var(--rose-deep)', marginBottom: '8px' }}>
-          Mécanisme solidaire
+          Collecte de dons
         </div>
         <h2
           style={{
@@ -257,9 +261,7 @@ export default function DinerGala() {
             margin: '0 0 24px',
           }}
         >
-          Chaque participant recevra à son arrivée un numéro unique associé à un code couleur. La
-          collecte de dons s’organisera par palier allant de <strong>20€ à 5 000€</strong>. Chaque
-          participant lèvera son numéro pour contribuer à la levée de fonds qui financera le projet 2026.
+          Chaque participant recevra à son arrivée un numéro unique. La collecte de dons s’organisera par palier allant de <strong>20€ à 5 000€</strong>. Chaque participant lèvera son numéro pour contribuer à la levée de fonds qui financera le projet 2026. En simultané, chaque participant formalisera sa promesse de dons en scannant le QR Code qui s'affichera dans la salle.
         </p>
 
         <div
@@ -277,23 +279,23 @@ export default function DinerGala() {
               1. Accueil
             </div>
             <div style={{ fontFamily: 'EB Garamond, serif', fontSize: '16px', color: 'var(--charcoal-soft)', marginTop: '4px' }}>
-              Remise de votre numéro unique &amp; code couleur
+              Remise de votre numéro unique à votre arrivée
             </div>
           </div>
           <div style={{ textAlign: 'center', padding: '12px' }}>
             <div style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 700, fontSize: '13px', color: 'var(--rose-deep)', textTransform: 'uppercase' }}>
-              2. Paliers
+              2. Paliers &amp; Mobilisation
             </div>
             <div style={{ fontFamily: 'EB Garamond, serif', fontSize: '16px', color: 'var(--charcoal-soft)', marginTop: '4px' }}>
-              Dons par étapes de 20€ à 5 000€
+              Paliers de 20€ à 5 000€ - Levez votre numéro pour contribuer
             </div>
           </div>
           <div style={{ textAlign: 'center', padding: '12px' }}>
             <div style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 700, fontSize: '13px', color: 'var(--charcoal)', textTransform: 'uppercase' }}>
-              3. Levée de fonds
+              3. Confirmation QR Code
             </div>
             <div style={{ fontFamily: 'EB Garamond, serif', fontSize: '16px', color: 'var(--charcoal-soft)', marginTop: '4px' }}>
-              Financement direct de la nouvelle zone d'accueil
+              Formalisation instantanée de votre promesse via le QR Code projeté en salle
             </div>
           </div>
         </div>
@@ -325,7 +327,7 @@ export default function DinerGala() {
               margin: '0 auto',
             }}
           >
-            La contribution que vous faites lors de la soirée AU CŒUR DES COULEURS — 1ère soirée
+            La contribution que vous faites lors de la soirée AU CŒUR DES COULEURS - 1ère soirée
             caritative au profit de la Maison Ronald McDonald de Toulouse, vous donne droit à une
             réduction annuelle d’impôt :
           </p>

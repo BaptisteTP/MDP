@@ -1,7 +1,8 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 import { Countdown } from '../components/Countdown'
 import { HeartDivider } from '../components/Signature'
 import LOGO_TOULOUSE from '../assets/logo-maison-toulouse.png'
+import LOGO_DESSINE_MOI from '../assets/dessine-moi-logo.jpg'
 import DEVANTURE_MAISON from '../assets/Toulouse_archi-5_HD.jpg'
 
 const chiffresClesCourts = [
@@ -11,7 +12,7 @@ const chiffresClesCourts = [
   },
   {
     num: '2 min',
-    lbl: 'à pied de l’hôpital des enfants du CHU de Toulouse Purpan',
+    lbl: 'à pied de l’Hôpital des Enfants du CHU de Toulouse Purpan',
   },
   {
     num: '392 nuits',
@@ -38,7 +39,9 @@ export default function Home() {
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
+              gap: '16px',
               marginBottom: '20px',
+              flexWrap: 'wrap',
             }}
           >
             <div
@@ -48,12 +51,20 @@ export default function Home() {
                 borderRadius: '12px',
                 border: '1px solid #E4D9C8',
                 boxShadow: '0 2px 6px rgba(58,48,42,.06)',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '14px',
               }}
             >
               <img
                 src={LOGO_TOULOUSE}
                 alt="Maison Ronald McDonald Toulouse"
-                style={{ height: '50px', width: 'auto', objectFit: 'contain' }}
+                style={{ height: '48px', width: 'auto', objectFit: 'contain' }}
+              />
+              <img
+                src={LOGO_DESSINE_MOI}
+                alt="Association Dessine-moi une Maison"
+                style={{ height: '42px', width: 'auto', objectFit: 'contain' }}
               />
             </div>
           </div>
@@ -84,10 +95,23 @@ export default function Home() {
               fontStyle: 'italic',
               fontSize: '20px',
               color: 'var(--charcoal-soft)',
+              marginBottom: '16px',
+            }}
+          >
+            Maison Ronald McDonald Toulouse
+          </div>
+
+          {/* MENTION CHEF ÉTOILÉ */}
+          <div
+            style={{
+              fontFamily: 'EB Garamond, serif',
+              fontSize: '18px',
+              fontWeight: 500,
+              color: 'var(--gold-dark)',
               marginBottom: '20px',
             }}
           >
-            Maison Ronald McDonald de Toulouse
+            Cocktail dînatoire signé Pierre Lambinon - 2 étoiles Michelin
           </div>
 
           {/* BADGE DATE */}
@@ -118,7 +142,7 @@ export default function Home() {
               marginBottom: '26px',
             }}
           >
-            Le 24 novembre 2026 — Accueil à partir de 18h30 — Les Espaces du Stadium, Toulouse FC
+            Le 24 novembre 2026 - Accueil à partir de 18h30 - Les Espaces du Stadium, Toulouse FC
           </div>
 
           {/* COMPTE À REBOURS */}
@@ -197,14 +221,13 @@ export default function Home() {
               margin: '0 0 20px',
             }}
           >
-            « C'est avec une immense joie que nous vous accueillons pour cette toute première
-            édition de notre soirée caritative AU CŒUR DES COULEURS. Depuis 20 ans à Toulouse, notre
-            Maison est un lieu de vie et de réconfort essentiel permettant aux familles de rester
-            unies auprès de leur enfant hospitalisé. Cette soirée exceptionnelle est l'occasion de
-            mobiliser notre communauté pour financer le projet 2026 : la création d'un nouvel espace
-            d'accueil au cœur de la Maison, conçu pour offrir à chaque famille toute l'intimité et
-            la sérénité dont elle a besoin. Du fond du cœur, merci pour votre engagement et votre
-            précieuse générosité. »
+            « C'est avec une immense joie que nous vous accueillons pour cette toute première édition de notre soirée caritative de la Maison Ronald McDonald de Toulouse.
+            <br /><br />
+            Depuis 20 ans à Toulouse, notre Maison est un lieu de vie et de réconfort essentiel permettant aux familles de rester unies auprès de leur enfant hospitalisé.
+            <br /><br />
+            Cette soirée exceptionnelle AU CŒUR DES COULEURS (référence au parcours de nos familles à la Maison) est l'occasion de mobiliser notre communauté pour financer le projet 2026 : la création d'un nouvel espace d'accueil de la Maison, conçu pour offrir à chaque famille toute l'intimité et la sérénité dont elle a besoin lors de notre première rencontre. Aujourd'hui ouvert et partagé, nous souhaitons repenser cet espace afin d'offrir aux familles un cadre plus confidentiel.
+            <br /><br />
+            Du fond du cœur, au nom de toute l'équipe de la Maison, merci pour votre engagement et votre précieuse générosité. »
           </p>
 
           <div
@@ -315,7 +338,7 @@ export default function Home() {
               margin: 0,
             }}
           >
-            Située à 2 minutes à pied de l’hôpital des enfants du CHU de Toulouse Purpan, la Maison Ronald
+            Située à 2 minutes à pied de l’Hôpital des Enfants du CHU de Toulouse Purpan, la Maison Ronald
             McDonald de Toulouse accueille chaque jour les familles dans un cadre chaleureux et
             bienveillant, préservant le lien familial durant l’épreuve de l’hospitalisation.
           </p>

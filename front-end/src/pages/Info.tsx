@@ -1,4 +1,4 @@
-import { SubpageHeader } from '../components/SubpageHeader'
+﻿import { SubpageHeader } from '../components/SubpageHeader'
 import { HeartDivider } from '../components/Signature'
 
 const hotels = [
@@ -8,7 +8,7 @@ const hotels = [
         desc: 'Résidence hôtelière moderne à proximité du Stadium et des transports',
     },
     {
-        name: 'Hôtel Gascogne – Toulouse',
+        name: 'Hôtel Gascogne - Toulouse',
         url: 'https://www.hotel-gascogne.com/fr/',
         desc: 'Hôtel chaleureux situé dans le quartier Saint-Cyprien',
     },
@@ -117,7 +117,7 @@ export default function Info() {
                             Les Espaces du Stadium Toulouse FC
                         </div>
                         <div style={{ fontFamily: 'EB Garamond, serif', fontSize: '17px', color: 'var(--charcoal-soft)' }}>
-                            1 allée Gabriel Biénès — 31400 Toulouse
+                            1 allée Gabriel Biénès - 31400 Toulouse
                         </div>
                     </div>
 
@@ -205,7 +205,7 @@ export default function Info() {
                             Contact organisation
                         </div>
                         <div style={{ fontFamily: 'EB Garamond, serif', fontSize: '18px', color: 'var(--charcoal)', fontWeight: 600 }}>
-                            Claire Renaud
+                            Claire Renaud <span style={{ fontSize: '15px', fontWeight: 400, color: 'var(--charcoal-soft)' }}>- Chargée de communication et levée de fonds</span>
                         </div>
                         <div style={{ fontFamily: 'EB Garamond, serif', fontSize: '17px', color: 'var(--charcoal-soft)', marginTop: '4px' }}>
                             Tél :{' '}
@@ -218,16 +218,16 @@ export default function Info() {
                             <br />
                             Mail :{' '}
                             <a
-                                href="mailto:evenement.mdptoulouse@gmail.com"
+                                href="mailto:soireecaritative@maisondesparents-toulouse.com"
                                 style={{ color: 'var(--rose-deep)', textDecoration: 'none' }}
                             >
-                                evenement.mdptoulouse@gmail.com
+                                soireecaritative@maisondesparents-toulouse.com
                             </a>
                         </div>
                     </div>
                 </div>
 
-                {/* GOOGLE MAPS EMBED — Parkings autour du Stadium */}
+                {/* GOOGLE MAPS EMBED - Parkings autour du Stadium */}
                 <div
                     style={{
                         borderRadius: '16px',
@@ -281,6 +281,129 @@ export default function Info() {
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
                     />
+                </div>
+            </section>
+
+            {/* MODES DE TRANSPORTS */}
+            <section
+                style={{
+                    marginBottom: '64px',
+                    background: 'var(--white)',
+                    borderRadius: '16px',
+                    padding: '36px 30px',
+                    boxShadow: '0 4px 18px rgba(58, 48, 42, 0.08)',
+                }}
+            >
+                <div style={{ textAlign: 'center', marginBottom: '28px' }}>
+                    <div className="eyebrow" style={{ color: 'var(--rose-deep)', marginBottom: '6px' }}>
+                        Accès &amp; Mobilité
+                    </div>
+                    <h2
+                        style={{
+                            fontFamily: '"The Seasons", "Playfair Display", serif',
+                            fontWeight: 600,
+                            fontSize: '28px',
+                            color: 'var(--charcoal)',
+                            margin: 0,
+                        }}
+                    >
+                        Comment venir à la soirée ?
+                    </h2>
+                </div>
+
+                <div
+                    style={{
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+                        gap: '20px',
+                    }}
+                >
+                    {/* EN VOITURE */}
+                    <div
+                        style={{
+                            background: 'var(--cream-light)',
+                            borderRadius: '12px',
+                            padding: '20px 22px',
+                            borderLeft: '4px solid var(--gold)',
+                        }}
+                    >
+                        <div style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 700, fontSize: '13px', color: 'var(--gold-dark)', textTransform: 'uppercase', marginBottom: '6px' }}>
+                            🚗 Venir en voiture
+                        </div>
+                        <p style={{ fontFamily: 'EB Garamond, serif', fontSize: '17px', color: 'var(--charcoal)', margin: 0, lineHeight: 1.5 }}>
+                            Stationnement préconisé sur les parkings publics situés aux abords du Stadium.
+                        </p>
+                    </div>
+
+                    {/* EN MÉTRO */}
+                    <div
+                        style={{
+                            background: 'var(--cream-light)',
+                            borderRadius: '12px',
+                            padding: '20px 22px',
+                            borderLeft: '4px solid var(--rose-deep)',
+                        }}
+                    >
+                        <div style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 700, fontSize: '13px', color: 'var(--rose-deep)', textTransform: 'uppercase', marginBottom: '6px' }}>
+                            🚇 Venir en métro
+                        </div>
+                        <p style={{ fontFamily: 'EB Garamond, serif', fontSize: '17px', color: 'var(--charcoal)', margin: 0, lineHeight: 1.5 }}>
+                            <strong>Ligne B</strong> - Station Empalot (10 min de marche).
+                        </p>
+                    </div>
+
+                    {/* TRAM & BUS CROIX DE PIERRE */}
+                    <div
+                        style={{
+                            background: 'var(--cream-light)',
+                            borderRadius: '12px',
+                            padding: '20px 22px',
+                            borderLeft: '4px solid var(--gold-dark)',
+                        }}
+                    >
+                        <div style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 700, fontSize: '13px', color: 'var(--gold-dark)', textTransform: 'uppercase', marginBottom: '6px' }}>
+                            🚊 Tram &amp; Bus par Croix de Pierre
+                        </div>
+                        <p style={{ fontFamily: 'EB Garamond, serif', fontSize: '16.5px', color: 'var(--charcoal)', margin: 0, lineHeight: 1.5 }}>
+                            • <strong>Lignes de bus :</strong> 34, 152, L5 s'arrêtant à proximité de Croix de Pierre.<br />
+                            • <strong>Ligne de Tram T1 :</strong> Arrêt Croix de Pierre.
+                        </p>
+                    </div>
+
+                    {/* TRAM & BUS ÎLE DU RAMIER */}
+                    <div
+                        style={{
+                            background: 'var(--cream-light)',
+                            borderRadius: '12px',
+                            padding: '20px 22px',
+                            borderLeft: '4px solid var(--rose-deep)',
+                        }}
+                    >
+                        <div style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 700, fontSize: '13px', color: 'var(--rose-deep)', textTransform: 'uppercase', marginBottom: '6px' }}>
+                            🚌 Tram &amp; Bus par Île du Ramier
+                        </div>
+                        <p style={{ fontFamily: 'EB Garamond, serif', fontSize: '16.5px', color: 'var(--charcoal)', margin: 0, lineHeight: 1.5 }}>
+                            • <strong>Lignes de bus :</strong> 34, 152, L5 (arrêt Stadium Ouest) / 66 (arrêt Île du Ramier).<br />
+                            • <strong>Ligne de Tram T1 :</strong> Arrêt Île du Ramier.
+                        </p>
+                    </div>
+
+                    {/* À VÉLO */}
+                    <div
+                        style={{
+                            background: 'var(--cream-light)',
+                            borderRadius: '12px',
+                            padding: '20px 22px',
+                            borderLeft: '4px solid var(--gold)',
+                        }}
+                    >
+                        <div style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 700, fontSize: '13px', color: 'var(--gold-dark)', textTransform: 'uppercase', marginBottom: '6px' }}>
+                            🚲 Venir à vélo
+                        </div>
+                        <p style={{ fontFamily: 'EB Garamond, serif', fontSize: '17px', color: 'var(--charcoal)', margin: 0, lineHeight: 1.5 }}>
+                            Stations VélôToulouse : <strong>Croix de Pierre</strong> &amp; <strong>Piscine Nakache</strong>.
+                        </p>
+                    </div>
                 </div>
             </section>
 

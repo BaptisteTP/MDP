@@ -1,4 +1,4 @@
-import { SubpageHeader } from '../components/SubpageHeader'
+﻿import { SubpageHeader } from '../components/SubpageHeader'
 import { HeartDivider } from '../components/Signature'
 
 export default function Don() {
@@ -49,7 +49,7 @@ export default function Don() {
           }}
         >
           Dans le cadre du mécénat, les contributions versées lors de la soirée AU CŒUR DES
-          COULEURS — 1ère soirée caritative au profit de la Maison Ronald McDonald de Toulouse
+          COULEURS - 1ère soirée caritative au profit de la Maison Ronald McDonald de Toulouse
           ouvrent droit à des avantages fiscaux.
         </p>
 

@@ -1,10 +1,10 @@
 import { SubpageHeader } from '../components/SubpageHeader'
 import { HeartDivider } from '../components/Signature'
 import AMBIANCE_TOULOUSE from '../assets/Toulouse_ambiance-34_HD.jpg'
-import CARTE_FRANCE from '../assets/Locations-France_icon-RGB-fr.png'
+import CARTE_FRANCE from '../assets/carte-france-cropped.png'
 
 const pastillesStats = [
-  { num: '2 min', lbl: 'à pied séparent la Maison de l’hôpital' },
+  { num: '2 min', lbl: 'à pied séparent la Maison de l’Hôpital des Enfants' },
   { num: '18 000', lbl: 'familles accueillies depuis 2005' },
   { num: '392 nuits', lbl: 'le séjour le plus long' },
   { num: '9', lbl: 'salariés engagés au quotidien' },
@@ -94,15 +94,15 @@ export default function LaMaison() {
 
         <div
           style={{
-            height: '360px',
+            height: '380px',
             borderRadius: '16px',
             overflow: 'hidden',
             boxShadow: '0 6px 20px rgba(58,48,42,.1)',
-            background: 'var(--white)',
+            background: '#FFFDEB',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            padding: '24px',
+            padding: '16px',
           }}
         >
           <img

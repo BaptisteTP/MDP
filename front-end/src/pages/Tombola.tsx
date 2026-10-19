@@ -1,14 +1,14 @@
-import { SubpageHeader } from '../components/SubpageHeader'
+﻿import { SubpageHeader } from '../components/SubpageHeader'
 import { HeartDivider } from '../components/Signature'
 
 const IMAGE_TOMBOLA = 'https://www.figma.com/api/mcp/asset/60c07e05-2f54-4823-a7ea-b141d4b1ac05'
 
 const lots = [
   { title: 'Entraînement CrossFit', partner: 'avec Vincent Clair' },
-  { title: 'Dîner pour deux', partner: 'Restaurant étoilé — à venir' },
-  { title: 'Séjour en gîte', partner: 'Partenaire hébergement — à venir' },
-  { title: 'Bijou artisanal', partner: 'Créateur local — à venir' },
-  { title: 'Billetterie événement sportif', partner: 'Partenaire sportif — à venir' },
+  { title: 'Dîner pour deux', partner: 'Restaurant étoilé - à venir' },
+  { title: 'Séjour en gîte', partner: 'Partenaire hébergement - à venir' },
+  { title: 'Bijou artisanal', partner: 'Créateur local - à venir' },
+  { title: 'Billetterie événement sportif', partner: 'Partenaire sportif - à venir' },
   { title: 'Lot surprise', partner: 'à découvrir le soir J' },
 ]
 

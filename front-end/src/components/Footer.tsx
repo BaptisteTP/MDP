@@ -1,4 +1,5 @@
-import LOGO_TOULOUSE from '../assets/logo-maison-toulouse.png'
+﻿import LOGO_TOULOUSE from '../assets/logo-maison-toulouse.png'
+import LOGO_DESSINE_MOI from '../assets/dessine-moi-logo.jpg'
 
 export default function Footer() {
   return (
@@ -41,6 +42,11 @@ export default function Footer() {
                 alt="Maison Ronald McDonald Toulouse"
                 style={{ height: '42px', width: 'auto', objectFit: 'contain' }}
               />
+              <img
+                src={LOGO_DESSINE_MOI}
+                alt="Association Dessine-moi une Maison"
+                style={{ height: '38px', width: 'auto', objectFit: 'contain', borderRadius: '4px' }}
+              />
             </div>
             <h4
               style={{
@@ -51,7 +57,7 @@ export default function Footer() {
                 color: 'var(--rose-pale)',
               }}
             >
-              Maison Ronald McDonald de Toulouse
+              Maison Ronald McDonald Toulouse
             </h4>
             <p style={{ fontSize: '13.5px', lineHeight: 1.7, color: '#D9CFC4', margin: 0 }}>
               105 avenue de Casselardit, 31300 Toulouse
@@ -66,10 +72,10 @@ export default function Footer() {
               <br />
               Mail :{' '}
               <a
-                href="mailto:evenement.mdptoulouse@gmail.com"
+                href="mailto:soireecaritative@maisondesparents-toulouse.com"
                 style={{ color: 'var(--rose-pale)', textDecoration: 'none' }}
               >
-                evenement.mdptoulouse@gmail.com
+                soireecaritative@maisondesparents-toulouse.com
               </a>
             </p>
           </div>
@@ -176,8 +182,8 @@ export default function Footer() {
             gap: '12px',
           }}
         >
-          <span>Association Dessine-moi une Maison — Maison Ronald McDonald de Toulouse</span>
-          <span>Mentions légales — Conception &amp; Réalisation : Baptiste TRONEL-PEYROZ</span>
+          <span>Association Dessine-moi une Maison - Maison Ronald McDonald Toulouse</span>
+          <span>Mentions légales - Conception &amp; Réalisation : Baptiste TRONEL-PEYROZ</span>
         </div>
       </div>
     </footer>
