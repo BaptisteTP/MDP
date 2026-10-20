@@ -100,15 +100,29 @@ export default function LaMaison() {
             boxShadow: '0 6px 20px rgba(58,48,42,.1)',
             background: '#FFFDEB',
             display: 'flex',
+            flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
             padding: '16px',
           }}
         >
+          <div
+            style={{
+              fontFamily: 'Poppins, sans-serif',
+              fontWeight: 700,
+              fontSize: '13px',
+              letterSpacing: '0.12em',
+              textTransform: 'uppercase',
+              color: 'var(--rose-deep)',
+              marginBottom: '10px',
+            }}
+          >
+            UN ANCRAGE NATIONAL
+          </div>
           <img
             src={CARTE_FRANCE}
             alt="Implantation des Maisons Ronald McDonald en France"
-            style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+            style={{ width: '100%', height: 'calc(100% - 28px)', objectFit: 'contain' }}
           />
         </div>
       </section>
@@ -221,7 +235,9 @@ export default function LaMaison() {
             margin: '0 auto',
           }}
         >
-          Prendre soin des familles et maintenir le lien familial durant l'hospitalisation de leur enfant.
+          Prendre soin des familles et maintenir le lien familial
+          <br />
+          durant l'hospitalisation de leur enfant.
         </p>
       </section>
 

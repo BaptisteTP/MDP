@@ -1,11 +1,10 @@
-﻿import { SubpageHeader } from '../components/SubpageHeader'
 import { HeartDivider } from '../components/Signature'
 import SALLE_ACCUEIL from '../assets/Toulouse_archi-14_HD.jpg'
 
 const programme = [
   { time: '18h30', text: 'Cocktail d’accueil' },
   { time: '19h15 - 20h15', text: 'Collecte de fonds pour soutenir les actions de la Maison Ronald McDonald de Toulouse' },
-  { time: '20h30 - 23h00', text: 'Cocktail dînatoire signé Pierre Lambinon - 2 étoiles Michelin, animations exclusives et vente aux enchères' },
+  { time: '20h30 - 23h00', text: 'Cocktail dînatoire signé Pierre Lambinon - 2 étoiles Michelin et animations exclusives' },
 ]
 
 export default function DinerGala() {
@@ -17,10 +16,24 @@ export default function DinerGala() {
         padding: '32px 24px 100px',
       }}
     >
-      <SubpageHeader
-        eyebrow="Soirée caritative 2026"
-        title="Au cœur des couleurs"
-      />
+      <div className="subpage-header" style={{ maxWidth: '1080px', margin: '0 auto 48px' }}>
+        <div className="header-content">
+          <h1
+            style={{
+              fontFamily: '"The Seasons", "Playfair Display", serif',
+              fontWeight: 700,
+              fontSize: 'clamp(28px, 4.5vw, 42px)',
+              color: 'var(--gold-dark)',
+              margin: '8px 0 0',
+              lineHeight: 1.2,
+              letterSpacing: '0.02em',
+            }}
+          >
+            SOIRÉE CARITATIVE 2026
+          </h1>
+        </div>
+        <div className="header-ribbon" />
+      </div>
 
       {/* CHAPÔ */}
       <section

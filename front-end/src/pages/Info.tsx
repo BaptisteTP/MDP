@@ -1,4 +1,4 @@
-﻿import { SubpageHeader } from '../components/SubpageHeader'
+import { SubpageHeader } from '../components/SubpageHeader'
 import { HeartDivider } from '../components/Signature'
 
 const hotels = [
@@ -61,8 +61,9 @@ export default function Info() {
                         margin: '0 auto 20px',
                     }}
                 >
-                    Retrouvez l'ensemble des informations logistiques pour vous rendre à la soirée caritative
-                    AU CŒUR DES COULEURS.
+                    Retrouvez l'ensemble des informations logistiques pour vous rendre
+                    <br />
+                    à la soirée caritative AU CŒUR DES COULEURS.
                 </p>
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <HeartDivider />
@@ -117,7 +118,7 @@ export default function Info() {
                             Les Espaces du Stadium Toulouse FC
                         </div>
                         <div style={{ fontFamily: 'EB Garamond, serif', fontSize: '17px', color: 'var(--charcoal-soft)' }}>
-                            1 allée Gabriel Biénès - 31400 Toulouse
+                            1 allée Gabriel Biénès - Porte P17bis - 31400 Toulouse
                         </div>
                     </div>
 

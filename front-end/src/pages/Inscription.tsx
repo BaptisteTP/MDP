@@ -1,4 +1,4 @@
-﻿import { SubpageHeader } from '../components/SubpageHeader'
+import { SubpageHeader } from '../components/SubpageHeader'
 import { HeartDivider } from '../components/Signature'
 import { Link } from 'react-router-dom'
 
@@ -169,7 +169,7 @@ export default function Inscription() {
             margin: '0 0 18px',
           }}
         >
-          Les Espaces du Stadium Toulouse FC - 1 allée Gabriel Biénès, 31400 Toulouse
+          Les Espaces du Stadium Toulouse FC - 1 allée Gabriel Biénès, Porte P17bis, 31400 Toulouse
         </p>
         <div style={{ display: 'flex', gap: '14px', justifyContent: 'center', flexWrap: 'wrap' }}>
           <Link to="/infos-pratiques" className="btn btn-ghost" style={{ fontSize: '13px' }}>
