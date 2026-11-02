@@ -115,7 +115,7 @@ export default function Info() {
                                 marginBottom: '4px',
                             }}
                         >
-                            Les Espaces du Stadium Toulouse FC
+                            Espace du Stadium Toulouse FC
                         </div>
                         <div style={{ fontFamily: 'EB Garamond, serif', fontSize: '17px', color: 'var(--charcoal-soft)' }}>
                             1 allée Gabriel Biénès - Porte P17bis - 31400 Toulouse
