@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { SubpageHeader } from '../components/SubpageHeader'
+import { BACKEND_URL } from '../services/socket'
 
 const PRESET_AMOUNTS = [20, 50, 100, 250, 500, 1000]
 
@@ -34,7 +35,7 @@ export default function Promesse() {
     setLoading(true)
 
     try {
-      const response = await fetch('/api/donations', {
+      const response = await fetch(`${BACKEND_URL}/api/donations`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

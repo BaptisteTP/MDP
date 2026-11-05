@@ -1,8 +1,8 @@
 import { io } from 'socket.io-client';
 
-const SOCKET_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3001';
+export const BACKEND_URL = (import.meta.env.VITE_BACKEND_URL || 'https://mdp-ja03.onrender.com').replace(/\/+$/, '');
 
-export const socket = io(SOCKET_URL, {
+export const socket = io(BACKEND_URL, {
   autoConnect: true,
   transports: ['websocket', 'polling']
 });
